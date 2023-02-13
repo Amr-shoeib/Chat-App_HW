@@ -1,7 +1,9 @@
+    
+    var socket = io();
     new Vue({
         el: '#app',
         data:{
-            connectedUsers:["User a", "user b"],
+            connectedUsers:[],
             messges:[],
             messges:{
                 "type":"",
@@ -15,7 +17,7 @@
         },
 
         created: function(){
-
+            // if server emits 'user joined', update connectedUsers
         },
 
          methods:{
