@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var server = require('http').Server(app);
 var port = process.env.PORT || 3000;
+var io = require('socket.io')(server);
 
 server.listen(port, function(){
 console.log("Listening on *:" + port)
