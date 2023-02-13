@@ -43,5 +43,43 @@
        </div>
     </div>
 </div>
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data:{
+            connectedUsers:[],
+            messges:[],
+            messges:{
+                "type":"",
+                "action":"",
+                "user":"",
+                "text":"",
+                "timestamp":""
+
+            },
+            areTyping:[]
+        },
+
+        created: function(){
+
+        },
+
+         methods:{
+            send: function (){
+
+            },
+            userIsTtping: function (username){
+
+            },
+            userAreTyping: function (){
+
+            }
+         }
+
+    })
+</script>
 </body>
 </html>
