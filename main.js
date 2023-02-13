@@ -1,7 +1,7 @@
     new Vue({
         el: '#app',
         data:{
-            connectedUsers:[],
+            connectedUsers:["User a", "user b"],
             messges:[],
             messges:{
                 "type":"",
