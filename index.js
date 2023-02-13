@@ -14,6 +14,10 @@ app.get('/', function(request, response){
     response.sendFile(__dirname + '/index.html')
 });
 
+app.get('onlineusers', function (request, response){
+
+});
+
 io.on('connection', function (socket){
 console.log('A user connected:' +socket.id);
 //Tell all users that someone connected
