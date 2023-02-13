@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Amr-shoeib/Chat-App_HW/issues"
   },
-  "homepage": "https://github.com/Amr-shoeib/Chat-App_HW#readme"
+  "homepage": "https://github.com/Amr-shoeib/Chat-App_HW#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
