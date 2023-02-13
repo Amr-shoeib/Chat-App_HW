@@ -1,0 +1,19 @@
+{
+  "name": "chat-app_hw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amr-shoeib/Chat-App_HW.git"
+  },
+  "author": "Amr shoeib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Amr-shoeib/Chat-App_HW/issues"
+  },
+  "homepage": "https://github.com/Amr-shoeib/Chat-App_HW#readme"
+}
