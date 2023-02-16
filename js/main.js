@@ -1,6 +1,10 @@
     
     var socket = io();
-    new vue({
+    
+    const { createApp } = Vue;
+
+    const vm = createApp({
+        
         el: '#app',
         data:{
             connectedUsers:[],
@@ -12,9 +16,12 @@
                 "text":"",
                 "timestamp":""
 
+                
+
             },
             areTyping:[]
         },
+    }),
 
         created: function(){
             // if server emits 'user joined', update connectedUsers
