@@ -6,7 +6,8 @@
     const vm = createApp({
         
         el: '#app',
-        data:{
+        data(){
+            return{
             connectedUsers:[],
             messges:[],
             messges:{
@@ -16,12 +17,12 @@
                 "text":"",
                 "timestamp":""
 
-                
-
             },
+        }
             areTyping:[]
         },
-    }),
+    },
+    
 
         created: function(){
             // if server emits 'user joined', update connectedUsers
@@ -44,7 +45,8 @@
         },
 
 
-         methods:{
+         methods: {
+            
             send: function (){
                 this.message.type = "chat";
                 this.message.user = socket.id;
@@ -55,7 +57,7 @@
                 this.message.text = '';
                 this.message.timestamp = '';
 
-
+                    
             },
             userIsTtping: function (username){
                 if(this.areTyping.indexOf(socket.id) <= -1) {
@@ -64,6 +66,7 @@
                 }
 
             },
+            
            
             stoppedTyping: function (){
                 if(keycode == '13' || (keycode == '8' && this.message.text == '')) {
@@ -73,9 +76,9 @@
                         socket.emit('stopped typing', socket.id);
                     }
                 }
-
-            }
-        
+            
+            },
+         
          }
-
-    });
+        
+         });
